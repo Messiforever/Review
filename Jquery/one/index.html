@@ -9,6 +9,12 @@
 </body>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script>
-    $(".container").append("<h1>hello,Jquery</h1>");
+    $(document).ready(function(){
+        $(".container").append("<h1>hello,Jquery</h1>");
+        $("h1").click(function(){
+            $(this).hide();
+        });
+    });
+
 </script>
 </html>
